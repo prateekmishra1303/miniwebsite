@@ -12,16 +12,22 @@ export default function About() {
                     </div>
                     <div className="md:7/12 lg:w-6/12">
                         <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-                            React development is carried out by passionate developers
+                            Naam Prateek Mishra.
+                            React mera religion hai, CSS meri poetry, aur JavaScript… arey bhai, wo toh meri jaan hai!
                         </h2>
                         <p className="mt-6 text-gray-600">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
-                            accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde
-                            aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!
+                            2 saal 7 mahine se TCS mein full legit code kar raha hoon — koi jugaadbaazi nahi, pure developer ki tarah.
+                            Front-end mera playground hai — HTML, CSS, JavaScript, React… sab ke saath daily ludo khelta hoon aur jeetta bhi hoon!
+                            Design system, reusable components, hooks, performance tuning — sab kuch aise kar ke deta hoon jaise chef masala daal raha ho curry mein — “taste bhi, scalability bhi!”
                         </p>
                         <p className="mt-4 text-gray-600">
-                            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
-                            Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
+                            Client bole: “Page load slow hai…”
+                            Main bola: “Aapka internet slow hai bhai 😎… but koi nhi, Abbhi optimization karke deta hoon!”
+
+                            Now listen — backend ka bhi “thoda kaafi” aata hai mujhe.
+                            Java? Spring Boot? Microservices?
+                            Arey bhai, REST API toh main aise banata hoon jaise maggi – 2 minute mein ready!
+                            PostgreSQL aur MySQL se toh meri purani dosti hai — query likhne ka style aisa, ki data khud bolta hai: ‘Le bhai, le… main hi hoon jo chahiye tha!’
                         </p>
                     </div>
                 </div>
