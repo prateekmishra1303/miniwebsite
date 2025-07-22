@@ -13,12 +13,28 @@ function Github(){
     //     })
     // }, [])
 
+    
+
  return(
-        <div className='text-center m-4 bg-gray-600 text-white p-4 text-3xl'>
-            Github followers: {data?.followers}
-            <div>
-            <img src = {data?.avatar_url} alt="Git picture" width = {300}/>
-        </div>
+         <div className="flex flex-col items-center justify-center px-4 py-8 sm:px-6 lg:px-8 min-h-[80vh] bg-gray-100">
+            <a
+             href="https://github.com/prateekmishra1303"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white shadow-md rounded-lg overflow-hidden w-full max-w-2xl flex flex-col sm:flex-row items-center p-6 hover:shadow-lg transition"
+            >
+                <img
+                    src={data?.avatar_url}
+                    alt="GitHub avatar"
+                    className="w-40 h-40 rounded-full border-4 border-orange-600 object-cover mb-4 sm:mb-0 sm:mr-6"
+                />
+                <div className="text-center sm:text-left">
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                        GitHub Followers
+                    </h2>
+                    <p className="text-4xl font-bold text-orange-700">{data?.followers}</p>
+                </div>
+            </a>
         </div>
     );
 }

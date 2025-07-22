@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function Contact() {
     return (
-        <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
+        <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0 px-4 sm:px-6 lg:px-8 pt-10 pb-16">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div className="mt-8 overflow-hidden">
-                    <div className="grid grid-cols-1 md:grid-cols-2">
-                        <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6">
+                        <div className="p-6 mb-6 md:mb-0 md:mr-4 bg-gray-100 rounded-lg">
                             <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
                                 Get in touch: 
                             </h1>
@@ -14,7 +14,7 @@ export default function Contact() {
                                 Fill in the form to start a conversation
                             </p>
 
-                            <div className="flex items-center mt-8 text-gray-600">
+                            <div className="flex items-center mt-8 sm:mt-6 text-gray-600">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -42,7 +42,7 @@ export default function Contact() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center mt-4 text-gray-600">
+                            <div className="flex items-center mt-4 sm:mt-6 text-gray-600">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -87,7 +87,7 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <form className="p-6 flex flex-col justify-center">
+                        <form className="bg-white rounded-lg shadow p-4 sm:p-5 md:p-6 flex flex-col justify-center">
                             <div className="flex flex-col">
                                 <label htmlFor="name" className="hidden">
                                     Full Name
@@ -97,7 +97,7 @@ export default function Contact() {
                                     name="name"
                                     id="name"
                                     placeholder="Full Name"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
 
@@ -110,7 +110,7 @@ export default function Contact() {
                                     name="email"
                                     id="email"
                                     placeholder="Email"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
 
@@ -123,13 +123,13 @@ export default function Contact() {
                                     name="tel"
                                     id="tel"
                                     placeholder="Telephone Number"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
 
                             <button
                                 type="submit"
-                                className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
+                                className="w-full md:w-32 bg-orange-700 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300 focus:outline-none"
                             >
                                 Submit
                             </button>
