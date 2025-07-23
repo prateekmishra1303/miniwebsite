@@ -4,10 +4,12 @@ import './index.css'
 import React from 'react';
 import Layout from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
+import Experience from './components/Experience/Experience.jsx';
 import About from './components/About/About.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import User from './components/User/User.jsx';
 import Github, {githubInfoLoader} from './components/Github/Github.jsx';
+import Skills from './components/Skills/Skills.jsx';
 import { createRoutesFromElements,RouterProvider, createBrowserRouter, Route } from 'react-router-dom'
 
 
@@ -35,7 +37,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
+      <Route path='experience' element={<Experience />} />
       <Route path='about' element={<About />} />
+      <Route path='skills' element={<Skills />} />
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />
       <Route 
