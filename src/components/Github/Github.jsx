@@ -16,7 +16,7 @@ function Github(){
     
 
  return(
-         <div className="flex flex-col items-center justify-center px-4 py-8 sm:px-6 lg:px-8 min-h-[80vh] bg-gray-100">
+         <div id="github" className="flex flex-col items-center justify-center px-4 py-8 sm:px-6 lg:px-8 min-h-[80vh] bg-gray-100">
             <a
              href="https://github.com/prateekmishra1303"
             target="_blank"

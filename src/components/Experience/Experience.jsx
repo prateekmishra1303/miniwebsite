@@ -1,7 +1,9 @@
 import React from 'react'
+
+
 export default function Experience() {
     return (
-        <div className="py-16 min-h-[80vh] bg-white">
+        <div id="experience" className="py-16 min-h-[80vh] bg-white">
             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div className="md:w-5/12 lg:w-5/12">
@@ -42,7 +44,7 @@ export default function Experience() {
                             </p>
 
                             <p className="mt-4 text-gray-600">
-                                Bottom line? Agar production mein deploy hona hai, toh mujhe bolo. Code likhna hai? System samjhana hai? no worries!! <span className="text-indigo-600 font-bold">Hello Dear I am Hear no Fikar bas Karo zikar!</span>
+                                Bottom line? Agar production mein deploy hona hai, toh mujhe bolo. Code likhna hai? System samjhana hai? no worries!! <span className="text-indigo-600 font-bold">Hello Dear I am Hear no fikar bas karo zikar!</span>
                             </p>
 
                     </div>

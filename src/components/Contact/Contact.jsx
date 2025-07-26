@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contact() {
     return (
-        <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0 px-4 sm:px-6 lg:px-8 pt-10 pb-16">
+        <div id="contact" className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0 px-4 sm:px-6 lg:px-8 pt-10 pb-16">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div className="mt-8 overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6">
@@ -130,6 +130,7 @@ export default function Contact() {
                             <button
                                 type="submit"
                                 className="w-full md:w-32 bg-orange-700 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300 focus:outline-none"
+                                style={{ backgroundColor: '#76B900' }}
                             >
                                 Submit
                             </button>

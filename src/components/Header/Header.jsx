@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
 
-export default function Header() {
+export default function Header({ toggleColor }) {
     return (
         <header className="shadow sticky z-50 top-0">
             <nav className="bg-white border-gray-200 px-3 sm:px-5 lg:px-6 py-2 sm:py-3">
@@ -14,18 +14,19 @@ export default function Header() {
                         />
                     </Link>
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 lg:order-2">
-                        <Link
+                        {/* <Link
                             to="#"
                             className="w-full sm:w-auto text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm sm:text-base px-4 py-2 focus:outline-none"
                         >
                             Log in
-                        </Link>
-                        <Link
-                            to="#"
-                            className="w-full sm:w-auto text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm sm:text-base px-4 py-2 focus:outline-none"
+                        </Link> */}
+                        {/* <button
+                            onClick = {toggleColor}
+                            className="w-full sm:w-auto text-white hover:bg-orange-800 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm sm:text-base px-4 py-2 focus:outline-none"
+                            style={{ backgroundColor: '#76B900' }}
                         >
                             Get started
-                        </Link>
+                        </button> */}
                     </div>
                     <div
                         className="w-full lg:flex lg:w-auto lg:order-1 mt-4 lg:mt-0"
@@ -36,8 +37,8 @@ export default function Header() {
                                 <NavLink
                                 to ="/"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 ${
-                                            isActive ? "text-orange-700" : "text-gray-700"
+                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
+                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
                                         }`
                                     }
                                 >
@@ -49,8 +50,8 @@ export default function Header() {
                                 <NavLink
                                 to ="/about"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 ${
-                                            isActive ? "text-orange-700" : "text-gray-700"
+                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
+                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
                                         }`
                                     }
                                 >
@@ -62,8 +63,8 @@ export default function Header() {
                                 <NavLink
                                 to ="/experience"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 ${
-                                            isActive ? "text-orange-700" : "text-gray-700"
+                                       `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
+                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
                                         }`
                                     }
                                 >
@@ -73,10 +74,23 @@ export default function Header() {
 
                             <li>
                                 <NavLink
+                                to ="/skills"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
+                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
+                                        }`
+                                    }
+                                >
+                                    Skills
+                                </NavLink>
+                            </li>
+
+                            <li>
+                                <NavLink
                                 to ="/Contact"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 ${
-                                            isActive ? "text-orange-700" : "text-gray-700"
+                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
+                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
                                         }`
                                     }
                                 >
@@ -88,25 +102,12 @@ export default function Header() {
                                 <NavLink
                                 to ="/github"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 ${
-                                            isActive ? "text-orange-700" : "text-gray-700"
+                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
+                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
                                         }`
                                     }
                                 >
                                     Github
-                                </NavLink>
-                            </li>
-
-                            <li>
-                                <NavLink
-                                to ="/skills"
-                                    className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 ${
-                                            isActive ? "text-orange-700" : "text-gray-700"
-                                        }`
-                                    }
-                                >
-                                    Skills
                                 </NavLink>
                             </li>
                             

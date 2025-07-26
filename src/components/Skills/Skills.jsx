@@ -3,7 +3,7 @@ import { FaCode, FaServer, FaDatabase, FaTools } from 'react-icons/fa';
 
 export default function Skills() {
     return (
- <div className="py-16 min-h-[80vh] bg-white">
+ <div id="skills" className="py-16 min-h-[80vh] bg-white">
       <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">My Skills</h2>
 
