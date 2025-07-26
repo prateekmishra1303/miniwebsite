@@ -26,13 +26,13 @@ function Github(){
                 <img
                     src={data?.avatar_url}
                     alt="GitHub avatar"
-                    className="w-40 h-40 rounded-full border-4 border-orange-600 object-cover mb-4 sm:mb-0 sm:mr-6"
+                    className="w-40 h-40 rounded-full border-4 border-gray-600 object-cover mb-4 sm:mb-0 sm:mr-6"
                 />
                 <div className="text-center sm:text-left">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-2">
                         GitHub Followers
                     </h2>
-                    <p className="text-4xl font-bold text-orange-700">{data?.followers}</p>
+                    <p className="text-4xl font-bold text-gray-800">{data?.followers}</p>
                 </div>
             </a>
         </div>
