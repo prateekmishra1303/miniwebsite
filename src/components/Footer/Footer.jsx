@@ -7,16 +7,6 @@ export default function Footer() {
          <footer className="bg-gray-100 text-gray-700 py-10 mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
-
-          {/* Logo on Left */}
-          <div className="w-32 mx-auto md:mx-0 text-center">
-            <img
-                src="/name_logo.png"
-                className="h-14 sm:h-20"
-                alt="Logo"
-            />
-          </div>
-
           {/* Links on Right */}
           <div className="grid grid-cols-2 sm:grid-cols-2 gap-10 text-sm text-gray-700">
 
