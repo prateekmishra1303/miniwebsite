@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
 
           {/* Logo on Left */}
-          <div className="w-32">
+          <div className="w-32 mx-auto md:mx-0 text-center">
             <img
                 src="/name_logo.png"
                 className="h-14 sm:h-20"
