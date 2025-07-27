@@ -1,7 +1,14 @@
 import React from 'react'
+import { useState } from 'react';
 import {Link, NavLink} from 'react-router-dom'
 
 export default function Header({ toggleColor }) {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () =>{
+        setIsMenuOpen(prev => !prev);
+    }
     return (
         <header className="shadow sticky z-50 top-0">
             <nav className="bg-white border-gray-200 px-3 sm:px-5 lg:px-6 py-2 sm:py-3">
@@ -13,106 +20,83 @@ export default function Header({ toggleColor }) {
                             alt="Logo"
                         />
                     </Link>
-                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 lg:order-2">
-                        {/* <Link
-                            to="#"
-                            className="w-full sm:w-auto text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm sm:text-base px-4 py-2 focus:outline-none"
-                        >
-                            Log in
-                        </Link> */}
-                        {/* <button
-                            onClick = {toggleColor}
-                            className="w-full sm:w-auto text-white hover:bg-orange-800 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm sm:text-base px-4 py-2 focus:outline-none"
-                            style={{ backgroundColor: '#76B900' }}
-                        >
-                            Get started
-                        </button> */}
+                     {/* Hamburger Icon (shown on small screens) */}
+                    <button
+                        className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none"
+                        onClick={toggleMenu}
+                    >
+                        {isMenuOpen ? (
+                            // "X" icon (close)
+                            <svg
+                                className="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                                ) : (
+                                    // Hamburger icon
+                                    <svg
+                                        className="w-6 h-6"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M4 6h16M4 12h16M4 18h16"
+                                        />
+                                    </svg>
+                                )}
+                    </button>
+
+                    {/* Right Section */}
+                    <div className="hidden sm:flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 lg:order-2">
+                        {/* <button onClick={toggleColor} ...>Get Started</button> */}
                     </div>
+
+                    {/* Nav Menu */}
                     <div
-                        className="w-full lg:flex lg:w-auto lg:order-1 mt-4 lg:mt-0"
+                        className={`w-full lg:flex lg:w-auto lg:order-1 mt-4 lg:mt-0 ${
+                            isMenuOpen ? 'block' : 'hidden'
+                        }`}
                         id="mobile-menu-2"
                     >
                         <ul className="flex flex-col text-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-6">
-                            <li>
-                                <NavLink
-                                to ="/"
-                                    className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
-                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
-                                        }`
-                                    }
-                                >
-                                    Home
-                                </NavLink>
-                            </li>
-                            
-                            <li>
-                                <NavLink
-                                to ="/about"
-                                    className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
-                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
-                                        }`
-                                    }
-                                >
-                                    About
-                                </NavLink>
-                            </li>
-
-                            <li>
-                                <NavLink
-                                to ="/experience"
-                                    className={({isActive}) =>
-                                       `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
-                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
-                                        }`
-                                    }
-                                >
-                                    Experience
-                                </NavLink>
-                            </li>
-
-                            <li>
-                                <NavLink
-                                to ="/skills"
-                                    className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
-                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
-                                        }`
-                                    }
-                                >
-                                    Skills
-                                </NavLink>
-                            </li>
-
-                            <li>
-                                <NavLink
-                                to ="/Contact"
-                                    className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
-                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
-                                        }`
-                                    }
-                                >
-                                    Contact Me
-                                </NavLink>
-                            </li>
-
-                            <li>
-                                <NavLink
-                                to ="/github"
-                                    className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0
-                                         hover:text-[#76B900] ${isActive ? 'text-[#76B900]' : 'text-black'
-                                        }`
-                                    }
-                                >
-                                    Github
-                                </NavLink>
-                            </li>
-                            
+                            {[
+                                { to: '/', label: 'Home' },
+                                { to: '/about', label: 'About' },
+                                { to: '/experience', label: 'Experience' },
+                                { to: '/skills', label: 'Skills' },
+                                { to: '/Contact', label: 'Contact Me' },
+                                { to: '/github', label: 'Github' },
+                            ].map(({ to, label }) => (
+                                <li key={to}>
+                                    <NavLink
+                                        to={to}
+                                        className={({ isActive }) =>
+                                            `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 
+                                            lg:hover:bg-transparent lg:border-0 lg:p-0 hover:text-[#76B900] 
+                                            ${isActive ? 'text-[#76B900]' : 'text-black'}`
+                                        }
+                                        onClick={() => setIsMenuOpen(false)} // close on click
+                                    >
+                                        {label}
+                                    </NavLink>
+                                </li>
+                            ))}
                         </ul>
-                    </div>
+                </div>
                 </div>
             </nav>
         </header>
