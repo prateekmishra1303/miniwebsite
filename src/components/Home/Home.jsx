@@ -9,10 +9,10 @@ export default function Home() {
         <div id="home" className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
             <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 py-10 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
-                    <div className="max-w-xl mt-10 sm:mt-1 space-y-6 text-center sm:text-right sm:ml-auto">
-                        <h2 className="text-4xl font-bold sm:text-5xl">
+                    <div className="max-w-2xl mt-12 sm:mt-4 space-y-8 text-center sm:text-right sm:ml-auto">
+                        <h2 className="text-5xl font-bold sm:text-6xl">
                             Prateek Mishra
-                            <span className="block text-3xl sm:text-4xl mt-2 sm:mt-0">Developer at TCS</span>
+                            <span className="block text-4xl sm:text-5xl mt-4 sm:mt-2">Developer at TCS</span>
                         </h2>
 
                         <Link to="/projects"
@@ -34,8 +34,8 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="flex justify-center sm:absolute sm:inset-0 sm:pt-20">
-                    <img className="w-64 sm:w-96 object-contain" 
+                <div className="flex justify-center sm:justify-start sm:absolute sm:inset-0 sm:pt-20">
+                    <img className="w-72 sm:w-[500px] object-contain"
                     src="https://www.animationxpress.com/wp-content/uploads/2015/01/common-man.jpg" 
                     alt="image1" 
                     />
@@ -43,7 +43,10 @@ export default function Home() {
             </aside>
 
             <div className="grid place-items-center my-8">
-                <img className="w-48 sm:w-96 object-contain" src="https://data1.ibtimes.co.in/en/full/558415/rk-laxman.jpg?w=667" alt="image2" />
+                <img img className="w-60 sm:w-[450px] object-contain" 
+                src="https://data1.ibtimes.co.in/en/full/558415/rk-laxman.jpg?w=667" 
+                alt="image2" 
+                />
             </div>
 
             <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Mai Software Banata Hai Re Baba!!</h1>
