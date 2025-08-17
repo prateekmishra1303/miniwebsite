@@ -1,4 +1,3 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import React from 'react';
@@ -7,7 +6,6 @@ import Home from './components/Home/Home.jsx'
 import Experience from './components/Experience/Experience.jsx';
 import About from './components/About/About.jsx';
 import Contact from './components/Contact/Contact.jsx';
-import User from './components/User/User.jsx';
 import Github, {githubInfoLoader} from './components/Github/Github.jsx';
 import Skills from './components/Skills/Skills.jsx';
 import Projects from './components/Projects/Projects.jsx'

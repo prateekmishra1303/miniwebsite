@@ -6,7 +6,7 @@ const projects = [
     description: 'A YouTube-like platform using HTML, CSS, JavaScript. Includes video listing, individual video pages, and authentication.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/prateekmishra1303/Youtube',
-    demo: 'https://youtube1303.netlify.app/',
+    demo: 'https://videostraming1303.netlify.app/',
   },
   {
     title: 'Hotstar Clone',
